@@ -1,0 +1,27 @@
+class Point {
+    int x;
+    int y;
+};
+
+int add(int a, int b) {
+    return a + b;
+}
+
+int main() {
+    int arr[4];
+    int x = 10;
+    int *p = &x;
+
+    arr[0] = *p;
+    arr[1] = add(20, 30);
+
+    Point pt;
+    pt.x = arr[0];
+    pt.y = arr[1];
+
+    if (pt.x < pt.y) {
+        return pt.y;
+    }
+
+    return pt.x;
+}

@@ -1,0 +1,21 @@
+# TACCo - Git Ignore File
+
+# Build artifacts & intermediate object files
+build/
+bin/
+
+# Temporary compiler output & execution artifacts
+*.s
+*.out
+*.o
+*.dot
+*.png
+
+# Editor & OS files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db

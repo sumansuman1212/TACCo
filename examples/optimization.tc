@@ -1,0 +1,12 @@
+int main() {
+    // Constant folding test: (10 + 20) * 2 -> 60
+    int a = (10 + 20) * 2;
+
+    // Algebraic simplification: b * 1 + 0 -> b
+    int b = a * 1 + 0;
+
+    // Dead code elimination: unused variable
+    int unused = 999 * 888;
+
+    return b;
+}
